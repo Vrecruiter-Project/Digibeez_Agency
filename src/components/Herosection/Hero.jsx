@@ -57,11 +57,15 @@ const Hero = () => {
               variant="h3"
               fontWeight="bold"
               sx={{
-                fontSize: { xs: "2rem", sm: "3rem", md: "4rem" }, // Responsive font size
+                fontSize: { xs: "2rem", sm: "3rem" }, // Responsive font size
               }}
             >
               Your Trusted Partner In The{" "}
-              <Typography component="span" variant="h3" color="#FFC107">
+              <Typography component="span" variant="h3" fontWeight= "bold" color="#FFC107"
+               sx={{
+                fontSize: { xs: "2rem", sm: "3rem"}, // Responsive font size
+              }}
+              >
                 Digital Age
               </Typography>
             </Typography>
