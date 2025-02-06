@@ -3,6 +3,7 @@ import { Box, Typography, Button, Container } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import StarIcon from "@mui/icons-material/Star";
 import backgroundImage from "../../assets/Hero/herobg.png"; // Ensure correct path
+import Star from "../../assets/Hero/star.png"; // Ensure correct path
 
 const Hero = () => {
   return (
@@ -12,7 +13,8 @@ const Hero = () => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100%",
+        minHeight: "90vh",
+        height: "auto",
         display: "flex",
         alignItems: "center",
         color: "white",
@@ -50,7 +52,7 @@ const Hero = () => {
           </Grid>
 
           {/* Main Heading */}
-          <Grid item xs={12}>
+          <Grid size= {{xs:12}}>
             <Typography
               variant="h3"
               fontWeight="bold"
@@ -66,7 +68,7 @@ const Hero = () => {
           </Grid>
 
           {/* Subheading */}
-          <Grid item xs={12}>
+          <Grid size= {{xs:12}}>
             <Typography
               variant="h6"
               sx={{
@@ -78,7 +80,7 @@ const Hero = () => {
           </Grid>
 
           {/* Stats Section */}
-          <Grid item xs={12} sm={4}>
+          <Grid size= {{xs:12, sm:4}}>
             <Button
               variant="contained"
               sx={{
@@ -91,7 +93,7 @@ const Hero = () => {
               100% Business Growth
             </Button>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid size= {{xs:12, sm:4}}>
             <Button
               variant="contained"
               sx={{
@@ -104,7 +106,7 @@ const Hero = () => {
               1000+ Satisfied Clients
             </Button>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid size= {{xs:12, sm:4}}>
             <Button
               variant="contained"
               sx={{
@@ -119,7 +121,7 @@ const Hero = () => {
           </Grid>
 
           {/* Ratings Section */}
-          <Grid item xs={12}>
+          <Grid size= {{xs:12}}>
             <Box display="flex" justifyContent="center" alignItems="center" gap={0.5}>
               {Array(5).fill().map((_, index) => (
                 <StarIcon key={index} sx={{ color: "#FFC107" }} />
@@ -135,17 +137,20 @@ const Hero = () => {
           </Grid>
 
           {/* Final CTA */}
-          <Grid item xs={12}>
-            <Typography
-              variant="h4"
-              fontWeight="bold"
-              sx={{
-                fontSize: { xs: "1.5rem", sm: "2rem", md: "3rem" }, // Responsive font size
-              }}
-            >
-              Grow Your Business With Us 🚀
-            </Typography>
-          </Grid>
+          <Grid size= {{xs:12}}>
+  <Box display="flex" justifyContent="center" alignItems="center">
+    <Typography
+      variant="h4"
+      fontWeight="bold"
+      sx={{
+        fontSize: { xs: "1.rem", sm: "2rem", md: "3rem" }, // Responsive font size
+      }}
+    >
+      Grow Your Business With Us
+    </Typography>
+    <img src={Star} alt="" style={{ marginLeft: "0.4rem" }} />
+  </Box>
+</Grid>
         </Grid>
       </Container>
     </Box>
