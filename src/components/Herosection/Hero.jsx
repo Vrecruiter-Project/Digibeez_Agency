@@ -86,8 +86,8 @@ const Hero = () => {
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
-                fontWeight: "bold",
-                fontSize: { xs: "0.8rem", sm: "1rem", md: "1.25rem" }, // Responsive font size
+                // fontWeight: "bold",
+                fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
               }}
             >
               100% Business Growth
@@ -99,8 +99,8 @@ const Hero = () => {
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
-                fontWeight: "bold",
-                fontSize: { xs: "0.8rem", sm: "1rem", md: "1.25rem" }, // Responsive font size
+                // fontWeight: "bold",
+                fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
               }}
             >
               1000+ Satisfied Clients
@@ -112,8 +112,8 @@ const Hero = () => {
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
-                fontWeight: "bold",
-                fontSize: { xs: "0.8rem", sm: "1rem", md: "1.25rem" }, // Responsive font size
+                // fontWeight: "bold",
+                fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
               }}
             >
               150+ Completed Projects
