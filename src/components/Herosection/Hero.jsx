@@ -12,10 +12,11 @@ const Hero = () => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        height: "100vh",
+        height: "100%",
         display: "flex",
         alignItems: "center",
         color: "white",
+        py: "2rem",
       }}
     >
       {/* Dark Overlay */}
