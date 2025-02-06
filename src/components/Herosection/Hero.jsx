@@ -140,10 +140,10 @@ const Hero = () => {
           <Grid size= {{xs:12}}>
   <Box display="flex" justifyContent="center" alignItems="center">
     <Typography
-      variant="h4"
+      
       fontWeight="bold"
       sx={{
-        fontSize: { xs: "1.rem", sm: "2rem", md: "3rem" }, // Responsive font size
+        fontSize: { xs: "1rem", sm: "2rem", md: "3rem" }, // Responsive font size
       }}
     >
       Grow Your Business With Us
