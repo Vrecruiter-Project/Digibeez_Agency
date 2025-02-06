@@ -29,9 +29,9 @@ const Hero = () => {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor:"#36340A",
+          backgroundColor: "#36340A",
           opacity: 0.7,
-           // Dark overlay for readability
+          // Dark overlay for readability
         }}
       />
 
@@ -47,12 +47,13 @@ const Hero = () => {
                 fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // Responsive font size
               }}
             >
-              #Top Rated Digital Marketing Agency and Digital Career In Chandigarh
+              #Top Rated Digital Marketing Agency and Digital Career In
+              Chandigarh
             </Typography>
           </Grid>
 
           {/* Main Heading */}
-          <Grid size= {{xs:12}}>
+          <Grid size={{ xs: 12 }}>
             <Typography
               variant="h3"
               fontWeight="bold"
@@ -61,10 +62,14 @@ const Hero = () => {
               }}
             >
               Your Trusted Partner In The{" "}
-              <Typography component="span" variant="h3" fontWeight= "bold" color="#FFC107"
-               sx={{
-                fontSize: { xs: "2rem", sm: "3rem"}, // Responsive font size
-              }}
+              <Typography
+                component="span"
+                variant="h3"
+                fontWeight="bold"
+                color="#FFC107"
+                sx={{
+                  fontSize: { xs: "2rem", sm: "3rem" }, // Responsive font size
+                }}
               >
                 Digital Age
               </Typography>
@@ -72,7 +77,7 @@ const Hero = () => {
           </Grid>
 
           {/* Subheading */}
-          <Grid size= {{xs:12}}>
+          <Grid size={{ xs: 12 }}>
             <Typography
               variant="h6"
               sx={{
@@ -84,7 +89,7 @@ const Hero = () => {
           </Grid>
 
           {/* Stats Section */}
-          <Grid size= {{xs:12, sm:4}}>
+          <Grid size={{ xs: 12, sm: 4 }}>
             <Button
               variant="contained"
               sx={{
@@ -98,7 +103,7 @@ const Hero = () => {
               100% Business Growth
             </Button>
           </Grid>
-          <Grid size= {{xs:12, sm:4}}>
+          <Grid size={{ xs: 12, sm: 4 }}>
             <Button
               variant="contained"
               sx={{
@@ -112,7 +117,7 @@ const Hero = () => {
               1000+ Satisfied Clients
             </Button>
           </Grid>
-          <Grid size= {{xs:12, sm:4}}>
+          <Grid size={{ xs: 12, sm: 4 }}>
             <Button
               variant="contained"
               sx={{
@@ -128,11 +133,18 @@ const Hero = () => {
           </Grid>
 
           {/* Ratings Section */}
-          <Grid size= {{xs:12}}>
-            <Box display="flex" justifyContent="center" alignItems="center" gap={0.5}>
-              {Array(5).fill().map((_, index) => (
-                <StarIcon key={index} sx={{ color: "#FFC107" }} />
-              ))}
+          <Grid size={{ xs: 12 }}>
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              gap={0.5}
+            >
+              {Array(5)
+                .fill()
+                .map((_, index) => (
+                  <StarIcon key={index} sx={{ color: "#FFC107" }} />
+                ))}
               <Typography
                 sx={{
                   fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // Responsive font size
@@ -144,20 +156,19 @@ const Hero = () => {
           </Grid>
 
           {/* Final CTA */}
-          <Grid size= {{xs:12}}>
-  <Box display="flex" justifyContent="center" alignItems="center">
-    <Typography
-      
-      fontWeight="bold"
-      sx={{
-        fontSize: { xs: "1rem", sm: "2rem", md: "3rem" }, // Responsive font size
-      }}
-    >
-      Grow Your Business With Us
-    </Typography>
-    <img src={Star} alt="" style={{ marginLeft: "0.4rem" }} />
-  </Box>
-</Grid>
+          <Grid size={{ xs: 12 }}>
+            <Box display="flex" justifyContent="center" alignItems="center">
+              <Typography
+                fontWeight="bold"
+                sx={{
+                  fontSize: { xs: "1rem", sm: "2rem", md: "3rem" }, // Responsive font size
+                }}
+              >
+                Grow Your Business With Us
+              </Typography>
+              <img src={Star} alt="" style={{ marginLeft: "0.4rem" }} />
+            </Box>
+          </Grid>
         </Grid>
       </Container>
     </Box>
