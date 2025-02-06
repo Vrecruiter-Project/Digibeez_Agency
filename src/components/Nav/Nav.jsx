@@ -11,13 +11,14 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
+import { Link } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import LogoLight from "../../assets/NavbarLogo/trace.png";
 
 const pages = ["Home", "About Us", "Services", "Courses"];
 
-const ResponsiveAppBar = ({ onButtonClick }) => {
+const Nav = ({ onButtonClick }) => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const toggleDrawer = (state) => () => setOpenDrawer(state);
@@ -52,7 +53,10 @@ const ResponsiveAppBar = ({ onButtonClick }) => {
             }}
           >
             {pages.map((page) => (
-              <Button key={page} sx={{ my: 2, color: "black", fontWeight: "bold" }}>
+              <Button
+                key={page}
+                sx={{ my: 2, color: "black", fontWeight: "bold" }}
+              >
                 {page}
               </Button>
             ))}
@@ -60,21 +64,30 @@ const ResponsiveAppBar = ({ onButtonClick }) => {
 
           {/* Demo Button (Right Side in Desktop) */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Button
-              onClick={onButtonClick}
+          <Button
               variant="contained"
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
                 px: 3,
               }}
+              component={Link}
+              href="https://digibeez.in/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book a Free Demo
             </Button>
           </Box>
 
           {/* Mobile Menu Button (Right Side) */}
-          <Box sx={{ display: { xs: "flex", md: "none" }, position: "absolute", right: 0 }}>
+          <Box
+            sx={{
+              display: { xs: "flex", md: "none" },
+              position: "absolute",
+              right: 0,
+            }}
+          >
             <IconButton size="large" color="black" onClick={toggleDrawer(true)}>
               <MenuIcon />
             </IconButton>
@@ -95,7 +108,10 @@ const ResponsiveAppBar = ({ onButtonClick }) => {
           }}
         >
           {/* Close Button */}
-          <IconButton sx={{ alignSelf: "flex-end", mr: 2 }} onClick={toggleDrawer(false)}>
+          <IconButton
+            sx={{ alignSelf: "flex-end", mr: 2 }}
+            onClick={toggleDrawer(false)}
+          >
             <CloseIcon />
           </IconButton>
 
@@ -106,14 +122,18 @@ const ResponsiveAppBar = ({ onButtonClick }) => {
                 <ListItemText primary={page} />
               </ListItem>
             ))}
+            
             <Button
-              onClick={onButtonClick}
               variant="contained"
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
                 px: 3,
               }}
+              component={Link}
+              href="https://digibeez.in/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Book a Free Demo
             </Button>
@@ -124,4 +144,4 @@ const ResponsiveAppBar = ({ onButtonClick }) => {
   );
 };
 
-export default ResponsiveAppBar;
+export default Nav;
