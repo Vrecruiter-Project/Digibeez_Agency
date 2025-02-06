@@ -86,6 +86,7 @@ const Hero = () => {
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
+                cursor: "default",
                 // fontWeight: "bold",
                 // fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
               }}
@@ -99,6 +100,7 @@ const Hero = () => {
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
+                cursor: "default",
                 // fontWeight: "bold",
                 // fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
               }}
@@ -112,6 +114,7 @@ const Hero = () => {
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
+                cursor: "default",
                 // fontWeight: "bold",
                 // fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
               }}
