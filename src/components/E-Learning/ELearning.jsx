@@ -15,7 +15,7 @@ function ELearning() {
           {/* Left Side - Text Content */}
           <Grid size={{ xs:12, md:6}}>
            
-            <Typography variant="body1" >
+            <Typography variant="body1" sx={{ textAlign: "justify" }}>
               Are you searching for a great digital marketing school in Chandigarh for beginners? 
               <strong> DigiBeez </strong> is an excellent option! They provide training that focuses 
               on what's important in the industry and includes real projects. Their courses cover 
