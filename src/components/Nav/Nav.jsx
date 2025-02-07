@@ -64,7 +64,7 @@ const Nav = ({ onButtonClick }) => {
 
           {/* Demo Button (Right Side in Desktop) */}
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-          <Button
+            <Button
               variant="contained"
               sx={{
                 backgroundColor: "#FCC41B",
@@ -122,7 +122,6 @@ const Nav = ({ onButtonClick }) => {
                 <ListItemText primary={page} />
               </ListItem>
             ))}
-            
             <Button
               variant="contained"
               sx={{
