@@ -50,7 +50,7 @@ function ELearning() {
 
           {/* Right Side - Image */}
           <Grid size={{ xs:12, md:6}}>
-            <img src={eLearningImage} alt="E-Learning" style={{ width: "auto", maxWidth: "450px", float:"right" }} />
+            <img src={eLearningImage} alt="E-Learning" style={{ width: "100%", maxWidth: "450px", float:"right" }} />
           </Grid>
         </Grid>
       </Container>
