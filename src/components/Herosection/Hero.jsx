@@ -1,7 +1,5 @@
-import React, {useState} from "react";
-import { Box, Typography, Button, Container, Rating } from "@mui/material";
-import Grid from "@mui/material/Grid2";
-import StarIcon from "@mui/icons-material/Star";
+import React, { useState } from "react";
+import { Box, Typography, Button, Container, Rating, Grid } from "@mui/material";
 import backgroundImage from "../../assets/Hero/herobg.png"; // Ensure correct path
 import Star from "../../assets/Hero/star.png"; // Ensure correct path
 
@@ -15,11 +13,10 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         minHeight: "90vh",
-        height: "auto",
         display: "flex",
         alignItems: "center",
         color: "white",
-        py: "2rem",
+        py: { xs: "2rem", md: "4rem" },
       }}
     >
       {/* Dark Overlay */}
@@ -32,45 +29,35 @@ const Hero = () => {
           height: "100%",
           backgroundColor: "#36340A",
           opacity: 0.7,
-          // Dark overlay for readability
         }}
       />
-
       <Container sx={{ position: "relative", zIndex: 2 }}>
-        <Grid container spacing={3} justifyContent="center" textAlign="center">
+        <Grid container spacing={2} textAlign="center" justifyContent="center">
           {/* Top Tagline */}
           <Grid item xs={12}>
             <Typography
               variant="h6"
-              sx={{
-                color: "#FFC107",
-                fontWeight: "bold",
-                fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // Responsive font size
-              }}
+              fontWeight="bold"
+              sx={{ fontSize: { xs: "0.9rem", sm: "1.1rem", md: "1.3rem" } }}
             >
-              #Top Rated Digital Marketing Agency and Digital Career In
-              Chandigarh
+              # <span className="text-amber-300">Top Rated</span> Digital Marketing Agency in Chandigarh
             </Typography>
           </Grid>
 
           {/* Main Heading */}
-          <Grid size={{ xs: 12 }}>
+          <Grid item xs={12}>
             <Typography
               variant="h3"
               fontWeight="bold"
-              sx={{
-                fontSize: { xs: "2rem", sm: "3rem" }, // Responsive font size
-              }}
+              sx={{ fontSize: { xs: "2rem", sm: "3rem", lg: "4rem" } }}
             >
-              Your Trusted Partner In The{" "}
+              Your Trusted Partner In The {" "}
               <Typography
                 component="span"
                 variant="h3"
                 fontWeight="bold"
                 color="#FFC107"
-                sx={{
-                  fontSize: { xs: "2rem", sm: "3rem" }, // Responsive font size
-                }}
+                sx={{ fontSize: { xs: "2rem", sm: "3rem", lg: "4rem" } }}
               >
                 Digital Age
               </Typography>
@@ -78,104 +65,62 @@ const Hero = () => {
           </Grid>
 
           {/* Subheading */}
-          <Grid size={{ xs: 12 }}>
-            <Typography
-              variant="h6"
-              sx={{
-                fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // Responsive font size
-              }}
-            >
+          <Grid item xs={12}>
+            <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
               Web Design, Develop and Dominate Your Digital Presence
             </Typography>
           </Grid>
 
-          {/* Stats Section */}
-          <Grid size={{ xs: 12, sm: 3, }}>
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: "#FCC41B",
-                color: "#000",
-                cursor: "default",
-                // fontWeight: "bold",
-                // fontSize: {sm: "13px" }, // Responsive font size
-              }}
-            >
-              100% Business Growth
-            </Button>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 3 }}>
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: "#FCC41B",
-                color: "#000",
-                cursor: "default",
-                // fontWeight: "bold",
-                // fontSize: {sm: "14px" }, // Responsive font size
-              }}
-            >
-              1000+ Satisfied Clients
-            </Button>
-          </Grid>
-          <Grid size={{ xs: 12, sm: 3 }}>
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: "#FCC41B",
-                color: "#000",
-                cursor: "default",
-                p: "-3px"
-                // fontWeight: "bold",
-                // fontSize: {sm: "12px" }, // Responsive font size
-              }}
-            >
-              150+ Completed Projects
-            </Button>
-          </Grid>
-
           {/* Ratings Section */}
-          <Grid size={{ xs: 12 }}>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              gap={0.5}
-            >
+          <Grid item xs={12}>
+            <Box display="flex" justifyContent="center" alignItems="center" gap={1} sx={{ flexDirection: { xs: "column", sm: "row" } }}>
               <Rating
-        name="simple-controlled"
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      />
-              <Typography
-                sx={{
-                  fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // Responsive font size
-                }}
-              >
+                name="simple-controlled"
+                value={value}
+                onChange={(event, newValue) => setValue(newValue)}
+              />
+              <Typography sx={{ fontSize: { xs: "0.875rem", sm: "1rem" } }}>
                 (5.0 out of 500+ Reviews)
               </Typography>
             </Box>
           </Grid>
 
-          {/* Final CTA */}
-          <Grid size={{ xs: 12 }}>
+          {/* Call to Action */}
+          <Grid item xs={12}>
             <Box display="flex" justifyContent="center" alignItems="center">
-              <Typography
-                fontWeight="bold"
-                sx={{
-                  fontSize: { xs: "1rem", sm: "2rem", md: "3rem" }, // Responsive font size
-                }}
-              >
+              <Typography fontWeight="bold" sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}>
                 Grow Your Business With Us
               </Typography>
-              <img src={Star} alt="" style={{ marginLeft: "0.4rem" }} />
+              <img src={Star} alt="star" style={{ marginLeft: "0.5rem", height: "40px" }} />
             </Box>
           </Grid>
+
+          {/* Stats Section */}
+          <Box sx={{  width: { xs: "100%", sm: "90%" , md: "60%" }, display: "flex", flexWrap: "wrap", justifyContent: "center",  }} >
+            {["1000+ Satisfied Clients", "500+ Successful Campaigns", "10+ Years of Experience"].map(
+              (text, index) => (
+                <Grid item xs={12} sm={4} key={index} mt={2}>
+                  <Button
+                    variant="contained"
+                    sx={{
+                      py: "0.5rem",
+                      width: "200px",
+                      margin: "0.2rem",
+                      backgroundColor: "#FCC41B",
+                      fontSize: { xs: "0.8rem", sm: "1rem" },
+                      color: "#000",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    {text}
+                  </Button>
+                </Grid>
+              )
+            )}
+          </Box>
         </Grid>
       </Container>
-    </Box>
+    </Box >
   );
 };
 
