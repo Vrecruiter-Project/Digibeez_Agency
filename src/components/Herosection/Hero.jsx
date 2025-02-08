@@ -1,11 +1,12 @@
-import React from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
+import React, {useState} from "react";
+import { Box, Typography, Button, Container, Rating } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import StarIcon from "@mui/icons-material/Star";
 import backgroundImage from "../../assets/Hero/herobg.png"; // Ensure correct path
 import Star from "../../assets/Hero/star.png"; // Ensure correct path
 
 const Hero = () => {
+  const [value, setValue] = useState(5);
   return (
     <Box
       sx={{
@@ -89,7 +90,7 @@ const Hero = () => {
           </Grid>
 
           {/* Stats Section */}
-          <Grid size={{ xs: 12, sm: 4 }}>
+          <Grid size={{ xs: 12, sm: 3, }}>
             <Button
               variant="contained"
               sx={{
@@ -97,13 +98,13 @@ const Hero = () => {
                 color: "#000",
                 cursor: "default",
                 // fontWeight: "bold",
-                // fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
+                // fontSize: {sm: "13px" }, // Responsive font size
               }}
             >
               100% Business Growth
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, sm: 4 }}>
+          <Grid size={{ xs: 12, sm: 3 }}>
             <Button
               variant="contained"
               sx={{
@@ -111,21 +112,22 @@ const Hero = () => {
                 color: "#000",
                 cursor: "default",
                 // fontWeight: "bold",
-                // fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
+                // fontSize: {sm: "14px" }, // Responsive font size
               }}
             >
               1000+ Satisfied Clients
             </Button>
           </Grid>
-          <Grid size={{ xs: 12, sm: 4 }}>
+          <Grid size={{ xs: 12, sm: 3 }}>
             <Button
               variant="contained"
               sx={{
                 backgroundColor: "#FCC41B",
                 color: "#000",
                 cursor: "default",
+                p: "-3px"
                 // fontWeight: "bold",
-                // fontSize: { xs: "0.8rem", sm: "1rem" }, // Responsive font size
+                // fontSize: {sm: "12px" }, // Responsive font size
               }}
             >
               150+ Completed Projects
@@ -140,11 +142,13 @@ const Hero = () => {
               alignItems="center"
               gap={0.5}
             >
-              {Array(5)
-                .fill()
-                .map((_, index) => (
-                  <StarIcon key={index} sx={{ color: "#FFC107" }} />
-                ))}
+              <Rating
+        name="simple-controlled"
+        value={value}
+        onChange={(event, newValue) => {
+          setValue(newValue);
+        }}
+      />
               <Typography
                 sx={{
                   fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // Responsive font size
