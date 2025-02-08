@@ -69,11 +69,11 @@ const OurPartner = () => {
         <Container>
           <Grid container sx={{ mt: 6 }}>
             <Grid size={12}>
-              <Typography
+              <Typography variant="h4"
                 sx={{
                   textAlign: "center",
                   fontWeight: "bold",
-                  fontSize: "30px",
+                //   fontSize: "30px",
                 }}
               >
                 Our Partner
