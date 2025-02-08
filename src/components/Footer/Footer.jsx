@@ -12,7 +12,7 @@ const Footer = () => {
 
       <Box
         sx={{
-          mt:10,
+          mt:20,
 
           position: "relative",
           bgcolor: "#2e1f19",
