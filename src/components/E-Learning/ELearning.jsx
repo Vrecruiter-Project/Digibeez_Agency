@@ -12,6 +12,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 import eLearningImage from "../../assets/ELearning/learning.png"; // Replace with your actual image path
 import Grid from "@mui/material/Grid2";
+import foot from "../../assets/Fotterheader/fotterbg.png";
 function ELearning() {
   return (
     <Box>
