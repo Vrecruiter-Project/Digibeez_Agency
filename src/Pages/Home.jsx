@@ -3,6 +3,7 @@ import Hero from "../components/Herosection/Hero";
 import CountUp from "../components/CountUp/CountUp";
 import ELearning from "../components/E-Learning/ELearning";
 import OurPartner from "../components/OurParnter/OurPartner";
+import Testimonials from "../components/Testimonial/Testimonials";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <CountUp />
       <ELearning />
+      <Testimonials/>
       <OurPartner />
     </>
   );
