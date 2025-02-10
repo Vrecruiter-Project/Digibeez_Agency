@@ -9,7 +9,7 @@ const VisionMission = () => {
     <Box
       sx={{
         textAlign: "center",
-        padding: "50px 20px",
+        // padding: "50px 20px",
         color: "#fff",
       }}
     >
@@ -17,7 +17,7 @@ const VisionMission = () => {
         {/* Section Title */}
         <Typography
           variant="h4"
-          sx={{ fontWeight: "bold", marginBottom: "10px", color: "#091009" }}
+          sx={{ fontWeight: "bold", marginBottom: "10px",p:"20px", color: "#091009" }}
         >
           What Makes Us Different From Other Online Training & <br /> Digital
           Marketing Company
