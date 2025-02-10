@@ -16,16 +16,14 @@ export default function Home() {
       <Hero />
       <CountUp />
       <ELearning />
-      <VisionMission />
+   
       <VisionMission />
       <CourseComparison />
       <ContactForm />
       <Testimonials />
       <OurPartner />
-      <CourseComparison />
+      
       <Certificate/>
-      
-      
     </>
   );
 }
