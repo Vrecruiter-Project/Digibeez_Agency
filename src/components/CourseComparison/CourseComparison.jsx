@@ -76,3 +76,5 @@ const CourseComparison = () => {
 };
 
 export default CourseComparison;
+
+

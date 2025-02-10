@@ -49,8 +49,9 @@ const Nav = ({ onButtonClick }) => {
               <img
                 src={LogoLight}
                 alt="Logo"
-                style={{ height: "50px", width: "auto", cursor: "pointer" }}
+                className="h-9 md:h-12 cursor-pointer"
               />
+
             </Box>
 
             {/* Desktop Navigation (Centered) */}

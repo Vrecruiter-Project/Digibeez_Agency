@@ -20,7 +20,7 @@ const Footer = () => {
           position: "absolute",
           top: "-8.9vh",  // Adjusted for better responsiveness
           left: 0,
-          width: "100%", // Ensures full width across devices
+          width: "100%",
           height: "9vh", // Adjust height dynamically
           backgroundImage: `url(${foot})`,
           backgroundSize: "contain", // Ensures the whole image is visible
@@ -28,7 +28,7 @@ const Footer = () => {
           backgroundPosition: "center",
           zIndex: 1,
 
-          [theme.breakpoints.down("sm")]: {
+          [theme.breakpoints.down("md")]: {
             display: "none", // Hide on smaller screens
           },
         },
@@ -93,7 +93,7 @@ const Footer = () => {
           </Grid>
 
           {/* Community Section */}
-          <Grid size={{ xs: 12, sm: 3}} >
+          <Grid size={{ xs: 12, sm: 3 }} >
             <Typography variant="h6" gutterBottom>
               Community
             </Typography>
