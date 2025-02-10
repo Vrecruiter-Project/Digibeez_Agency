@@ -4,7 +4,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import CancelIcon from "@mui/icons-material/Cancel";
 import Grid from "@mui/material/Grid2";
 
-const FeatureComparison = () => {
+const CourseComparison = () => {
   const digibeezFeatures = [
     "Expert-Led Training – Learn from industry professionals with real-world experience.",
     "Flexible Learning – Access course materials anytime, anywhere.",
@@ -29,28 +29,29 @@ const FeatureComparison = () => {
       </Typography>
       <Box sx={{ width: 80, borderBottom: 4, borderColor: "#FFC107", mb: 4 }}></Box>
       {/* <Paper elevation={1} sx={{ p: 3, textAlign: "center" ,  }}> */}
-        <Grid container spacing={4} sx={{ maxWidth: 900, width: "100%" }}>
-          {/* Digibeez Section */}
-          <Grid size={{ xs: 12, md: 6 }}>
-            <Paper elevation={3} sx={{ p: 3, textAlign: "center" }}>
+      <Grid container spacing={4} sx={{ maxWidth: 900, width: "100%" }}>
+        {/* Digibeez Section */}
+        <Grid size={{ xs: 12, md: 6 }}>
+          <Paper elevation={3} sx={{ p: 3, textAlign: "center" }}>
             <Typography variant="h5" fontWeight="bold" gutterBottom>
               Digibeez
             </Typography>
             <List>
               {digibeezFeatures.map((feature, index) => (
-                <ListItem key={index}>
-                  <ListItemIcon>
-                    <CheckCircleIcon sx={{ color: "green" }} />
-                  </ListItemIcon>
+                <ListItem key={index}
+                  sx={{ display: "flex", alignItems: "start", p: 1, gap: 1 }}>
+
+                  <CheckCircleIcon sx={{ color: "green", mt: '  8px' }} />
+
                   <ListItemText primary={feature} />
                 </ListItem>
               ))}
             </List>
-            </Paper>
-          </Grid>
+          </Paper>
+        </Grid>
 
-          {/* Other Company Section */}
-          <Grid size={{ xs: 12, md: 6 }} >
+        {/* Other Company Section */}
+        <Grid size={{ xs: 12, md: 6 }} >
           <Paper elevation={3} sx={{ p: 3, textAlign: "center" }}>
 
             <Typography variant="h5" fontWeight="bold" gutterBottom>
@@ -58,20 +59,20 @@ const FeatureComparison = () => {
             </Typography>
             <List>
               {otherCompanyFeatures.map((feature, index) => (
-                <ListItem key={index}>
-                  <ListItemIcon>
-                    <CancelIcon sx={{ color: "red" }} />
-                  </ListItemIcon>
+                <ListItem key={index} sx={{ display: "flex", alignItems: "start", p: 1, gap: 1 }}>
+                  {/* <ListItemIcon> */}
+                  <CancelIcon sx={{ color: "red", mt: '  8px' }} />
+                  {/* </ListItemIcon> */}
                   <ListItemText primary={feature} />
                 </ListItem>
               ))}
             </List>
-            </Paper>
-          </Grid>
+          </Paper>
         </Grid>
+      </Grid>
       {/* </Paper> */}
-    </Box>
+    </Box >
   );
 };
 
-export default FeatureComparison;
+export default CourseComparison;
