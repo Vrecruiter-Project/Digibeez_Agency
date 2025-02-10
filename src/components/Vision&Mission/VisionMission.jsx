@@ -52,7 +52,7 @@ const VisionMission = () => {
               color: "#FBC02D",
               fontWeight: "bold",
               paddingBottom:"40px",
-              
+              fontSize: { xs: "1.3rem", sm: "2.2rem" },
             }}
           >
             Our Mission and Vision Statement
