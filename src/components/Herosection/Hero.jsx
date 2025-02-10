@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Container, Rating, Grid } from "@mui/material";
+import { Box, Typography, Button, Container, Rating } from "@mui/material";
 import backgroundImage from "../../assets/Hero/herobg.png"; // Ensure correct path
 import Star from "../../assets/Hero/star.png"; // Ensure correct path
+import Grid from "@mui/material/Grid2";
 
 const Hero = () => {
   const [value, setValue] = useState(5);
@@ -34,7 +35,7 @@ const Hero = () => {
       <Container sx={{ position: "relative", zIndex: 2 }}>
         <Grid container spacing={2} textAlign="center" justifyContent="center">
           {/* Top Tagline */}
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12}} >
             <Typography
               variant="h6"
               fontWeight="bold"
@@ -45,7 +46,7 @@ const Hero = () => {
           </Grid>
 
           {/* Main Heading */}
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12}} >
             <Typography
               variant="h3"
               fontWeight="bold"
@@ -65,14 +66,14 @@ const Hero = () => {
           </Grid>
 
           {/* Subheading */}
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12}} >
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
               Web Design, Develop and Dominate Your Digital Presence
             </Typography>
           </Grid>
 
           {/* Ratings Section */}
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12}} >
             <Box display="flex" justifyContent="center" alignItems="center" gap={1} sx={{ flexDirection: { xs: "column", sm: "row" } }}>
               <Rating
                 name="simple-controlled"
@@ -86,7 +87,7 @@ const Hero = () => {
           </Grid>
 
           {/* Call to Action */}
-          <Grid item xs={12}>
+          <Grid size={{ xs: 12}}>
             <Box display="flex" justifyContent="center" alignItems="center">
               <Typography fontWeight="bold" sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}>
                 Grow Your Business With Us
@@ -99,7 +100,7 @@ const Hero = () => {
           <Box sx={{  width: { xs: "100%", sm: "90%" , md: "60%" }, display: "flex", flexWrap: "wrap", justifyContent: "center",  }} >
             {["1000+ Satisfied Clients", "500+ Successful Campaigns", "10+ Years of Experience"].map(
               (text, index) => (
-                <Grid item xs={12} sm={4} key={index} mt={2}>
+                <Grid size={{ xs: 12, sm: 4 }} key={index} mt={2}>
                   <Button
                     variant="contained"
                     sx={{
