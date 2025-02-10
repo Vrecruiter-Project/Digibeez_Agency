@@ -7,6 +7,8 @@ import Testimonials from "../components/Testimonial/Testimonials";
 import ContactForm from "../components/Form/form";
 import VisionMission from "../components/Vision&Mission/VisionMission.jsx";
 import CourseComparison from "../components/CourseComparison/CourseComparison";
+import Certificate from "../components/Certificate/Certificate";
+
 
 export default function Home() {
   return (
@@ -15,10 +17,13 @@ export default function Home() {
       <CountUp />
       <ELearning />
       <VisionMission />
+      <VisionMission />
       <CourseComparison />
       <ContactForm />
       <Testimonials />
       <OurPartner />
+      <CourseComparison />
+      <Certificate/>
       
       
     </>
