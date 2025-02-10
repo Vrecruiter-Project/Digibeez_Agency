@@ -98,7 +98,7 @@ const Hero = () => {
 
           {/* Stats Section */}
           <Box sx={{ display: "flex", flexWrap: "wrap", gap:{xs: "2px", sm: "12px"} , alignItems: "center", justifyContent: "center" }} >
-            {["100% Business Growth", "1000+ Satisfied clint", "150+ Completed Project"].map(
+            {["100% Business Growth", "1000+ Satisfied clients", "150+ Completed Project"].map(
               (text, index) => (
                 <Box key={index} mt={2}>
                   <Button
