@@ -15,10 +15,12 @@ export default function Home() {
       <CountUp />
       <ELearning />
       <Testimonials />
+      <CourseComparison />
+      <VisionMission />
       <ContactForm />
       <OurPartner />
-      <VisionMission/>
-      <CourseComparison />
+      
+      
     </>
   );
 }
