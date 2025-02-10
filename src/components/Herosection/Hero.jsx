@@ -35,7 +35,7 @@ const Hero = () => {
       <Container sx={{ position: "relative", zIndex: 2 }}>
         <Grid container spacing={2} textAlign="center" justifyContent="center">
           {/* Top Tagline */}
-          <Grid size={{ xs: 12}} >
+          <Grid size={{ xs: 12 }} >
             <Typography
               variant="h6"
               fontWeight="bold"
@@ -46,7 +46,7 @@ const Hero = () => {
           </Grid>
 
           {/* Main Heading */}
-          <Grid size={{ xs: 12}} >
+          <Grid size={{ xs: 12 }} >
             <Typography
               variant="h3"
               fontWeight="bold"
@@ -66,14 +66,14 @@ const Hero = () => {
           </Grid>
 
           {/* Subheading */}
-          <Grid size={{ xs: 12}} >
+          <Grid size={{ xs: 12 }} >
             <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.2rem" } }}>
               Web Design, Develop and Dominate Your Digital Presence
             </Typography>
           </Grid>
 
           {/* Ratings Section */}
-          <Grid size={{ xs: 12}} >
+          <Grid size={{ xs: 12 }} >
             <Box display="flex" justifyContent="center" alignItems="center" gap={1} sx={{ flexDirection: { xs: "column", sm: "row" } }}>
               <Rating
                 name="simple-controlled"
@@ -87,7 +87,7 @@ const Hero = () => {
           </Grid>
 
           {/* Call to Action */}
-          <Grid size={{ xs: 12}}>
+          <Grid size={{ xs: 12 }}>
             <Box display="flex" justifyContent="center" alignItems="center">
               <Typography fontWeight="bold" sx={{ fontSize: { xs: "1.5rem", sm: "2rem" } }}>
                 Grow Your Business With Us
@@ -97,15 +97,14 @@ const Hero = () => {
           </Grid>
 
           {/* Stats Section */}
-          <Box sx={{  width: { xs: "100%", sm: "90%" , md: "60%" }, display: "flex", flexWrap: "wrap", justifyContent: "center",  }} >
-            {["1000+ Satisfied Clients", "500+ Successful Campaigns", "10+ Years of Experience"].map(
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap:'20px' }} >
+            {["100% Business Growth", "1000+ Satisfied clint", "150+ Completed Project"].map(
               (text, index) => (
-                <Grid size={{ xs: 12, sm: 4 }} key={index} mt={2}>
+                <Box key={index} mt={2}>
                   <Button
                     variant="contained"
                     sx={{
-                      py: "0.5rem",
-                      width: "200px",
+                      width: "100%",
                       margin: "0.2rem",
                       backgroundColor: "#FCC41B",
                       fontSize: { xs: "0.8rem", sm: "1rem" },
@@ -115,7 +114,7 @@ const Hero = () => {
                   >
                     {text}
                   </Button>
-                </Grid>
+                </Box>
               )
             )}
           </Box>

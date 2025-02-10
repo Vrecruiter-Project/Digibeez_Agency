@@ -32,7 +32,7 @@ function Testimonials() {
       <Grid container spacing={12} justifyContent="center" sx={{ marginTop: "40px" }}>
         {testimonials.map((testimonial, index) => (
           <Grid size ={{xs:12, sm:6}} key={index}>
-            <Card sx={{ background: "#000", color: "#fff", padding: "20px", borderRadius: "10px" }}>
+            <Card sx={{ background: "	#1B1212", color: "#fff", padding: "20px", borderRadius: "10px" }}>
               <CardContent>
                 <FormatQuoteIcon sx={{ color: "#4CAF50", fontSize: "40px" }} />
                 <Typography variant="body1" sx={{ marginTop: "10px",textAlign:"justify" }}>

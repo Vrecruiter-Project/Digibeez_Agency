@@ -4,6 +4,8 @@ import CountUp from "../components/CountUp/CountUp";
 import ELearning from "../components/E-Learning/ELearning";
 import OurPartner from "../components/OurParnter/OurPartner";
 import Testimonials from "../components/Testimonial/Testimonials";
+import CourseComparison from "../components/CourseComparison/CourseComparison";
+
 
 export default function Home() {
   return (
@@ -11,8 +13,9 @@ export default function Home() {
       <Hero />
       <CountUp />
       <ELearning />
-      <Testimonials/>
+      <Testimonials />
       <OurPartner />
+      <CourseComparison />
     </>
   );
 }
