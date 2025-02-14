@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      
       <CountUp />
       <ELearning />
       <VisionMission />
