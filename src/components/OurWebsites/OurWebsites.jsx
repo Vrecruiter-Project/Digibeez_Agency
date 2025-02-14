@@ -15,12 +15,12 @@ export default function OurWebsites() {
     {
       name: "V Recruiter",
       img: vrecuiter,
-      link: "https://v-recruiter.com/",
+      link: "https://vrecruiters.in/",
     },
     {
       name: "JobHub",
       img: jobhub,
-      link: "https://jobhub.com/",
+      link: "https://www.jobhub.world/",
     },
   ];
   return (
