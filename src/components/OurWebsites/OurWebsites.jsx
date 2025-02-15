@@ -6,6 +6,7 @@ import digibeez from "../../assets/OurWebsites/d.png";
 
 export default function OurWebsites() {
   const websites = [
+    
     {
       name: "Digibeez",
       img: digibeez,
