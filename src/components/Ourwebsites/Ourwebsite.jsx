@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
-//import vrecuiter from "../../assets/Ourwebsites/vr.png";
 import jobhub from "../../assets/Ourwebsites/jobhub.png";
 import digibeez from "../../assets/Ourwebsites/d.png";
 
@@ -10,13 +9,9 @@ export default function OurWebsites() {
     {
       name: "Digibeez",
       img: digibeez,
-      link: "https://digibeez.in/" ,
+      link: "https://digibeez.in/",
     },
-    // {
-    //   name: "V Recruiter",
-    //   img: vrecuiter,
-    //   link: "https://vrecruiters.in/",
-    // },
+
     {
       name: "JobHub",
       img: jobhub,
