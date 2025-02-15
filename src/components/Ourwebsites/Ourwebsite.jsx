@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import vrecuiter from "../../assets/Ourwebsites/v.png";
+import vrecuiter from "../../assets/Ourwebsites/vr.png";
 import jobhub from "../../assets/Ourwebsites/jobhub.png";
 import digibeez from "../../assets/Ourwebsites/d.png";
 
