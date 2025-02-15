@@ -11,7 +11,7 @@ export default function Approutes() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/service" element={<Service />} />
+        <Route path="/service" element={<Service/>} />
         <Route path="/courses" element={<Courses />} />
       </Routes>
     </>
