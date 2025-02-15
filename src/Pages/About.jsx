@@ -1,9 +1,9 @@
 import React from 'react';
-import OurWebsites from '../components/OurWebsites/OurWebsites';
+import Ourwebsites from '../components/Ourwebsites/Ourwebsite';
 import CertificationCard from '../components/Certificate/Certificate';
 import Learners from '../components/Learners/Learners';
 import AboutUs from '../components/aboutus/aboutus';
-import { Container } from '@mui/material';
+
 
 export default function About() {
   return (
@@ -13,7 +13,7 @@ export default function About() {
       <AboutUs />
       <Learners />
       <CertificationCard />
-      <OurWebsites />
+      <Ourwebsites />
 
 
     </>

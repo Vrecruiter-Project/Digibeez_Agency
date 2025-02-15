@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Card, CardContent, Typography } from "@mui/material";
-import vrecuiter from "../../assets/OurWebsites/v.png";
-import jobhub from "../../assets/OurWebsites/jobhub.png";
-import digibeez from "../../assets/OurWebsites/d.png";
+import vrecuiter from "../../assets/Ourwebsites/v.png";
+import jobhub from "../../assets/Ourwebsites/jobhub.png";
+import digibeez from "../../assets/Ourwebsites/d.png";
 
 
 export default function OurWebsites() {

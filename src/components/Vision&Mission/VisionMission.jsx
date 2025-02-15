@@ -9,7 +9,7 @@ const VisionMission = () => {
     <Box
       sx={{
         textAlign: "center",
-        // padding: "50px 20px",
+
         color: "#fff",
       }}
     >
