@@ -10,7 +10,7 @@ export default function OurWebsites() {
     {
       name: "Digibeez",
       img: digibeez,
-      link: "https://digibeez.in/",
+      link: "https://digibeez.in/" ,
     },
     // {
     //   name: "V Recruiter",
