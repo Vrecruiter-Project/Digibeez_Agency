@@ -4,7 +4,6 @@ import vrecuiter from "../../assets/OurWebsites/v.png";
 import jobhub from "../../assets/OurWebsites/jobhub.png";
 import digibeez from "../../assets/OurWebsites/d.png";
 
-
 export default function OurWebsites() {
   const websites = [
     {
@@ -12,21 +11,23 @@ export default function OurWebsites() {
       img: digibeez,
       link: "https://digibeez.in/",
     },
+
     {
       name: "V Recruiter",
       img: vrecuiter,
       link: "https://vrecruiters.in/",
     },
+
     {
       name: "JobHub",
       img: jobhub,
       link: "https://www.jobhub.world/",
     },
+
   ];
   return (
 
     <Box >
-
       <Typography
         variant="h5"
         sx={{
@@ -34,7 +35,6 @@ export default function OurWebsites() {
         }} > Explore Our Website
 
       </Typography>
-
       <Box
         sx={{
 
@@ -45,6 +45,7 @@ export default function OurWebsites() {
           mt: 4
         }}
       >
+
         {websites.map((item, index) => (
           <Card
             key={index}
@@ -77,6 +78,7 @@ export default function OurWebsites() {
                 }}
               />
             </a>
+
             <CardContent>
               <Typography variant="h6" align="center" >
                 {item.name}
