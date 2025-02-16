@@ -5,6 +5,7 @@ import Learners from '../components/Learners/Learners';
 import AboutUs from '../components/aboutus/aboutus';
 import Abouthero from '../components/abouthero/Abouthero';
 import Countup from '../components/CountUp/CountUp';
+import PlacementProcess from '../components/Placementprocess/Placement';
 
 
 
@@ -14,6 +15,7 @@ export default function About() {
       <Abouthero />
       <Countup />
       <AboutUs />
+      <PlacementProcess />
       <Learners />
       <CertificationCard />
       <Ourwebsites />
