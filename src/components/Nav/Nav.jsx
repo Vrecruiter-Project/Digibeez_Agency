@@ -11,12 +11,17 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import { Link } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import LogoLight from "../../assets/NavbarLogo/trace.png";
+import { Link } from "react-router-dom";
 
-const pages = ["Home", "About Us", "Services", "Courses"];
+const pages = [
+  { name: "Home", path: "/" },
+  { name: "About Us", path: "/about" },
+  { name: "Services", path: "/service" },
+  { name: "Courses", path: "/courses" },
+];
 
 const Nav = ({ onButtonClick }) => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -31,7 +36,7 @@ const Nav = ({ onButtonClick }) => {
           backgroundColor: "white",
           zIndex: 1100,
           boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
-          padding: "10px 0"
+          padding: "10px 0",
         }}
       >
         <Container>
@@ -46,12 +51,13 @@ const Nav = ({ onButtonClick }) => {
           >
             {/* Logo (Left Side) */}
             <Box sx={{ display: "flex", flexGrow: 1 }}>
-              <img
-                src={LogoLight}
-                alt="Logo"
-                className="h-9 md:h-12 cursor-pointer"
-              />
-
+              <Link to="/">
+                <img
+                  src={LogoLight}
+                  alt="Logo"
+                  className="h-9 md:h-12 cursor-pointer"
+                />
+              </Link>
             </Box>
 
             {/* Desktop Navigation (Centered) */}
@@ -64,7 +70,9 @@ const Nav = ({ onButtonClick }) => {
             >
               {pages.map((page) => (
                 <Button
-                  key={page}
+                  key={page.name}
+                  component={Link}
+                  to={page.path}
                   sx={{
                     my: 2,
                     color: "black",
@@ -79,7 +87,7 @@ const Nav = ({ onButtonClick }) => {
                     },
                   }}
                 >
-                  {page}
+                  {page.name}
                 </Button>
               ))}
             </Box>
@@ -94,7 +102,6 @@ const Nav = ({ onButtonClick }) => {
                   px: 3,
                   py: 1.5,
                 }}
-                component={Link}
                 href="https://digibeez.in/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -141,8 +148,15 @@ const Nav = ({ onButtonClick }) => {
             {/* Menu Items */}
             <List>
               {pages.map((page) => (
-                <ListItem button key={page} onClick={toggleDrawer(false)}>
-                  <ListItemText primary={page} />
+                <ListItem button key={page.name} onClick={toggleDrawer(false)}>
+                  <ListItemText>
+                    <Link
+                      to={page.path}
+                      style={{ textDecoration: "none", color: "black" }}
+                    >
+                      {page.name}
+                    </Link>
+                  </ListItemText>
                 </ListItem>
               ))}
               <Button
@@ -153,7 +167,6 @@ const Nav = ({ onButtonClick }) => {
                   px: 3,
                   mt: 2,
                 }}
-                component={Link}
                 href="https://digibeez.in/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -166,7 +179,7 @@ const Nav = ({ onButtonClick }) => {
       </AppBar>
 
       {/* Spacer for Fixed Navbar */}
-      <Box sx={{ height: "64px" }} />
+      <Box sx={{ height: "60px" }} />
     </>
   );
 };
