@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonial/Testimonials";
 import ContactForm from "../components/Form/form";
 import VisionMission from "../components/Vision&Mission/VisionMission.jsx";
 import CourseComparison from "../components/CourseComparison/CourseComparison";
+import ServiceCourses from '../components/ServiceCourses/ServiceCourses'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
       <CourseComparison />
       <ContactForm />
       <Testimonials />
-      <OurPartner />
+      <OurPartner />      <ServiceCourses/>
     </>
   );
 }

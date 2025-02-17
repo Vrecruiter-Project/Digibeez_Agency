@@ -14,14 +14,19 @@
     "@emotion/styled": "^11.14.0",
     "@fontsource/mulish": "^5.1.1",
     "@mui/icons-material": "^6.4.3",
+    "@mui/lab": "^6.0.0-beta.26",
     "@mui/material": "^6.4.3",
+    "@react-three/drei": "^9.121.4",
+    "@react-three/fiber": "^8.17.14",
     "@tailwindcss/vite": "^4.0.3",
+    "framer-motion": "^12.4.1",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.5",
     "styled-components": "^6.1.15",
-    "tailwindcss": "^4.0.3"
+    "tailwindcss": "^4.0.3",
+    "three": "^0.173.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
