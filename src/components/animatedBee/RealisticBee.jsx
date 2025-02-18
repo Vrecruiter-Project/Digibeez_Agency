@@ -52,7 +52,7 @@ const RealisticBee = () => {
         pointerEvents: "auto",
       }}
       drag
-      dragConstraints={{ left: -1000, right: 1000, top: -1000, bottom: 1000 }}
+      dragConstraints={{ left: -100, right: 100, top: -8888, bottom: 1000 }}
       whileTap={{ scale: 0.9 }}
     >
       <Canvas style={{ height: "100%", width: "100%" }} camera={{ position: [0, 1, 5], fov: 50 }}>
