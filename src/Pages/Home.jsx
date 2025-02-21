@@ -14,12 +14,13 @@ export default function Home() {
     <>
       <Hero />
       <CountUp />
+      <ServiceCourses />
       <ELearning />
       <VisionMission />
       <CourseComparison />
       <ContactForm />
       <Testimonials />
-      <OurPartner />      <ServiceCourses/>
+      <OurPartner />
     </>
   );
 }

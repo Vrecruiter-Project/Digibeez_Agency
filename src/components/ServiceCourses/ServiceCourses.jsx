@@ -16,7 +16,7 @@ import img5 from "../../assets/ServicesCourses/img5.png";
 import img6 from "../../assets/ServicesCourses/img6.png";
 import img7 from "../../assets/ServicesCourses/img7.png";
 import img8 from "../../assets/ServicesCourses/img8.png";
-import RealisticBee from "../animatedBee/RealisticBee";
+//import RealisticBee from "../animatedBee/RealisticBee";
 
 const timelineEvents = [
   { id: 1, image: img1, title: "SEO Services", description: "With our effective SEO Services, we'll provide you with the best organic SEO results...", icon: <SchoolIcon />, color: "red" },
@@ -36,7 +36,7 @@ const ServiceCourses = () => {
         <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
           <span style={{ color: "#FCC41B", fontWeight: "bolder" }}>Our</span> Services and Courses
         </Typography>
-          <RealisticBee timelineEvents={timelineEvents} />
+          {/* <RealisticBee timelineEvents={timelineEvents} /> */}
 
         <Timeline position="alternate">
           {timelineEvents.map((event) => (

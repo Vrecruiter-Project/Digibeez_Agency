@@ -2,7 +2,6 @@ import React from "react";
 import { Grid, Card, CardContent, Typography, Button, Box, Container } from "@mui/material";
 import { Work, Assignment, School, People, ListAlt, Phone } from "@mui/icons-material";
 
-
 const PlacementProcess = () => {
   const steps = [
     { icon: <People fontSize="large" />, title: "Expert Mentors", desc: "All Our Trainers are Industry Experts Having Experience." },

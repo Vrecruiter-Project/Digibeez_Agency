@@ -7,8 +7,6 @@ import Abouthero from '../components/abouthero/Abouthero';
 import Countup from '../components/CountUp/CountUp';
 import PlacementProcess from '../components/Placementprocess/Placement';
 
-
-
 export default function About() {
   return (
     <>
@@ -19,7 +17,6 @@ export default function About() {
       <Learners />
       <CertificationCard />
       <Ourwebsites />
-
     </>
   )
 }
